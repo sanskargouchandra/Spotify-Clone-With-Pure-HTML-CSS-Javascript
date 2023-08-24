@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"); /* Maven Pro  font-family: 'Maven Pro', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"); /* Varela Round  font-family: 'Maven Pro', sans-serif; */
+
+body {
+  background-color: rgb(233, 228, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding-right: 20px;
+  list-style-type: none;
+  height: 90x;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+    overflow: hidden;
+ display: flex;
+ align-content: center;
+ justify-content: space-evenly;
+
+}
+.pa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.pa:hover {
+  color: rgb(92, 216, 92);
+}
+.box{
+    transition: all .5s linear 0s;
+    box-shadow: 10px 10px 70px 10px rgb(252, 252, 252) ;
+}
+.box:hover{
+    transform: scale(1.2);
+}
+
+.brand img {
+  width: 151px;
+  margin: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.container{
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+}
+.box1{
+  min-height: 43vh;
+  background-color: #000000;
+  background-image: linear-gradient(0deg, #000000 0%, #375a92 100%);
+  
+}
+
+.box2{
+  min-height: 33vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.first{
+  margin: 20px;
+}
+
+.sec{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px 2em;
+  justify-items: center;
+  margin: 20px;
+}
+.third{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px 2em;
+  justify-items: center;
+  margin: 20px;
+}
+.songbox{
+  height: 70px;
+  width: 280px;
+  display: flex;
+  cursor: pointer;
+  transition: all .3s linear 0s;
+}
+
+.songbox:hover{
+  transform: scale(1.1);
+}
+
+.songdet{
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 70px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  
+}
+.songname{
+opacity: 1;
+padding: 10px;
+line-height: 0.8rem;
+color: #ffffff;
+}
+
+.songcard{
+  height: 31vh;
+  width: 30vh;
+  background-color: rgb(46, 45, 45);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;  
+}
+
+.songimg{
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.bottom{
+    position: sticky;
+    height: 105px;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 40rem;
+    cursor: pointer;
+}
+.icons{
+  width: 30px;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+   
+}
+
+.icons img{
+  cursor: pointer;
+}
+
+
+/* rangestyle  */
+.range{
+  margin: 5px;
+}
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 200px;
+    background-color: transparent;
+
+    &:focus {
+      outline-color: #f8b195;
+    }
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -moz-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+  
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgb(246, 114, 128);
+    background: -moz-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(246, 114, 128, 1) 0%,
+      rgba(192, 108, 132, 1) 50%,
+      rgba(53, 92, 125, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#f67280",
+      endColorstr="#355c7d",
+      GradientType=1
+    );
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #f8b195;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 8px;
+  background: #222
+    url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+    center no-repeat;
+  background-size: 50%;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+
+
+
+  input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #f8b195;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #222
+      url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+      center no-repeat;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #f8b195;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #222
+      url("http://codemenatalie.com/wp-content/uploads/2019/09/slider-thumb.png")
+      center no-repeat;
+    background-size: 50%;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+    
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
