@@ -36,7 +36,7 @@ It is an Spotify clone which made up of pure HTML, CSS and JAVASCRIPT . It has d
 
 <!-- Screenshots -->
 
-### :camera: Demo Video
+### :camera: Screenshort
 
 <div style="display: flex" align="center"><br>
 
